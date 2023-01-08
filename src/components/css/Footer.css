@@ -1,0 +1,23 @@
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: var(--footer-height);
+    gap: 10px;
+    
+    color: #5f6c7b;
+}
+
+#footer img {
+    max-height: auto;
+    max-width: 24px;
+    cursor: pointer;
+    
+    transition: transform .2s;
+}
+
+#footer img:hover {
+    transform: rotateZ(360deg);
+}
