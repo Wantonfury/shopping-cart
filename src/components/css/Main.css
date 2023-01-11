@@ -4,5 +4,5 @@
     width: 100%;
     height: calc(100% - var(--header-height) - var(--footer-height));
     
-    background-color: #fffffe;
+    background-color: #d8eefe;
 }

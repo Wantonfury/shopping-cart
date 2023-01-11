@@ -7,6 +7,7 @@
     height: var(--footer-height);
     gap: 10px;
     
+    background-color: #d8eefe;
     color: #5f6c7b;
 }
 
