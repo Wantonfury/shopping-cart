@@ -8,12 +8,14 @@ import Cart from "./Cart/Cart";
 const Main = () => {
     return (
         <div id="main">
-            <Routes>
-                <Route path="/" element={<Navigate to="/home" />} />
-                <Route path="/home" element={<Home />} />
-                <Route path="/shop" element={<Shop />} />
-                <Route path="/cart" element={<Cart />} />
-            </Routes>
+            <div className="main-wrapper">
+                <Routes>
+                    <Route path="/" element={<Navigate to="/home" />} />
+                    <Route path="/home" element={<Home />} />
+                    <Route path="/shop" element={<Shop />} />
+                    <Route path="/cart" element={<Cart />} />
+                </Routes>
+            </div>
         </div>
     );
 }

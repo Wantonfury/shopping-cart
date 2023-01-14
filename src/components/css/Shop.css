@@ -1,0 +1,17 @@
+#shop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    column-gap: 20px;
+}
+
+.shop-item {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.shop-item img {
+    max-height: 300px;
+}
