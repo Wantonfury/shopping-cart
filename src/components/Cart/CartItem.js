@@ -1,14 +1,13 @@
 import React from "react";
 
-const Item = props => {
+const CartItem = props => {
     return (
-        <div className="shop-item">
+        <div className="shop-item cart-item">
             <img src={props.img} />
             <p>{props.title}</p>
             <p>{props.price.toFixed(2)}</p>
-            <button type="button" onClick={props.onClick}>Add to cart</button>
         </div>
     );
 }
 
-export default Item;
+export default CartItem;
