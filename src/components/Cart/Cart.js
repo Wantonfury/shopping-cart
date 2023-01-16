@@ -7,13 +7,17 @@ const Cart = () => {
     const { cartItems } = useContext(CartContext);
     
     return (
-        <ul id="cart" className="main-wrapper">
-            {cartItems.map((item, index) => {
-                return <li key={index}>
-                    <CartItem img={item.img} title={item.title} price={item.price} />
-                </li>
-            })}
-        </ul>
+        <div id="cart-page">
+            <ul id="cart-container" className="main-wrapper">
+                {cartItems.map((item, index) => {
+                    return <li key={index}>
+                        <CartItem img={item.img} title={item.title} price={item.price} />
+                    </li>
+                })}
+            </ul>
+            
+            <button type="button" id="checkout">Checkout</button>
+        </div>
     );
 }
 

@@ -15,6 +15,7 @@
     
     width: 25%;
     height: 60%;
+    animation: fade-in .2s;
 }
 
 .homepage-img {
@@ -23,6 +24,7 @@
     width: 70%;
     
     border-radius: 4%;
+    animation: fade-in .2s;
 }
 
 .homepage-button-wrapper {
@@ -45,6 +47,7 @@
     border: none;
     border-radius: 24px;
     cursor: pointer;
+    animation: fade-in .2s;
 }
 
 .homepage-button:hover {
