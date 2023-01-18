@@ -12,13 +12,30 @@ const Shop = () => {
     const { cartItems, setCartItems } = useContext(CartContext);
     
     const addToCart = (img, title, price) => {
-        let item = {
+        let cartItem = {
             img: img,
             title: title,
-            price: price
+            price: price,
+            stock: 1
         };
         
-        setCartItems([...cartItems, item]);
+        const oldItem = cartItems.find((item) => {
+            if (item.img === cartItem.img && item.title === cartItem.title && item.price === cartItem.price) return true;
+            return false;
+        });
+        
+        if (oldItem) {
+            const newCartItems = cartItems.map(item => {
+                if (item === oldItem) {
+                    return { ...item, stock: item.stock + 1 };
+                }
+                return item;
+            });
+            
+            setCartItems(newCartItems);
+        } else {
+            setCartItems([...cartItems, cartItem]);
+        }
     }
     
     return (

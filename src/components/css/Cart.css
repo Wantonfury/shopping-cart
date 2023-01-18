@@ -51,3 +51,20 @@
 .cart-item {
     align-items: center;
 }
+
+.cart-item-count {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 30%;
+}
+
+.cart-item-count input[type=image] {
+    height: 24px;
+    width: 24px;
+}
+
+.cart-item-count button {
+    border: none;
+}

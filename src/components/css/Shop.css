@@ -8,6 +8,7 @@
 .shop-item {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     
     max-width: 300px;
     
